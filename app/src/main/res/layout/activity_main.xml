@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2b569a"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:text="WELCOME TO MY COUNTER"
+        android:textColor="@android:color/white"/>
+
+    <EditText
+        android:hint="Input sentences"
+        android:scrollbars="vertical"
+        android:gravity="top"
+
+        android:id="@+id/inputText"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:layout_height="250dp"/>
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:textColor="@android:color/white"
+        android:text="Clear"
+        android:background="@drawable/font_red"
+        android:layout_height="wrap_content"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/count"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:text="COUNT"-->
+<!--        android:textSize="20sp"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="Character"/>
+
+                <TextView
+                    android:id="@+id/character"
+                    android:layout_width="100dp"
+                    android:hint="0"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="Word"/>
+
+                <TextView
+                    android:id="@+id/word"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="Lower Case"/>
+
+                <TextView
+                    android:id="@+id/lowercase"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                   />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="Uppercase"/>
+
+                <TextView
+                    android:id="@+id/uppercase"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:hint="0"
+                    android:textColorHint="@android:color/white"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="Number"/>
+
+                <TextView
+                    android:id="@+id/number"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:hint="0"
+                    android:textColorHint="@android:color/white"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="Special Char"/>
+
+                <TextView
+                    android:id="@+id/specialchar"
+
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:hint="0"
+                    android:textColorHint="@android:color/white"
+                    android:paddingLeft="20dp"
+                    android:paddingStart="20dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="Vokal Alp"/>
+
+                <TextView
+                    android:id="@+id/vocal"
+                    android:layout_width="100dp"
+                    android:paddingLeft="20dp"
+                    android:paddingStart="20dp"
+                    android:hint="0"
+                    android:layout_height="match_parent"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="Consonan Alp"/>
+
+                <TextView
+                    android:id="@+id/consonan"
+                    android:layout_width="100dp"
+                    android:paddingLeft="20dp"
+                    android:paddingStart="20dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:hint="0"
+                    android:textColorHint="@android:color/white"
+                   />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="Sentences"/>
+
+                <TextView
+                    android:id="@+id/sentences"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:paddingLeft="20dp"
+                    android:paddingStart="20dp"
+                    android:textColorHint="@android:color/white"
+                    android:hint="0"
+                   />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:textColor="@android:color/white"
+        android:text="Copyright \u00a9 2020, Yud[A]. "
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
